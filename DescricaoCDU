@@ -1,0 +1,34 @@
+CDU - Retirar veículo
+
+Descricao - Após reservar o veículo, chega à locadora para a retirada do veículo. O atendente valida as informações do cliente, registra a quilometragem do veículo e entrega o veículo conforme a categoria reservada.
+
+Atores - Atendente
+
+Inclusões - Não há
+
+Extensões - Não há
+
+Pré-condição - Deve haver uma reserva em nome do cliente
+
+Fluxo Disparador -
+    passo 1 - [ator] O atendente acessa a opção "Registrar Retirada"
+
+Fluxo Principal -
+    passo 1 - [sistema] Exibe a tela de registro de retirada de veículos
+    passo 2 - [sistema] Lista as reservas feitas para a data corrente
+    passo 3 - [ator] Seleciona a reserva e informa a quilometragem do veículo escolhido
+    passo 4 - [sistema] Realiza a validação dos dados [RN1]
+    passo 5 - [sistema] Exibe a mensagem "Entrega registrada"
+    passo 6 - [sistema] Termina o caso de uso
+
+Pós-condições do FP - Não há
+
+Fluxo Alternativo 1 - ao passo 2 do FP
+    passo 1 - [ator] Acessa a opção "Cancelar"
+    passo 2 - [ator] Informa o motivo do cancelamento
+    passo 3 - [sistema] Retorna ao passo 5 do FP
+
+Fluxo de Exceção (FE) - Não há
+
+Regras de Negócio -
+    1 - A CNH do cliente deve estar válida no período da reserva
