@@ -1,0 +1,5 @@
+1 - Estudo de caso
+2 - Diagrama de Atividades (Processo de negócios)
+3 - Diagrama de Casos de Uso
+4 - Especificação (resumo, pré-condição, fluxo básico)
+5 - Diagrama de Classes de Domínio
